@@ -1,0 +1,92 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <conio.h>
+
+// Sistema de banco de dados Simples
+// Seleciona vendedores por regiao
+
+int main(){
+
+  char regiao, vendendor;
+
+  printf("Regioes: Leste, Oeste e Norte\n");
+  printf("Informe a primeira letra da regiao: ");
+  regiao = getche(); // parecido com a função scanf
+                    // le um comando do teclado
+
+   regiao = toupper(regiao); // converte a letra digita pelo usuario em maiúculas
+   printf("\n");
+
+   switch (regiao)
+   {
+   case 'L':
+        printf("Vendedores: Ricardo, Lucas, Jose e Isabela \n");
+        printf("Informe a primeira letra do vendedor: ");
+        vendendor = toupper(getche());
+        printf("\n");
+
+            switch(vendendor){
+              
+              case 'R':
+                  printf("Vendas: R$ %d\n", 5000);
+                  break;
+              case 'L':
+                  printf("Vendas: R$ %d\n", 15000);
+                  break;
+              case 'J':
+                  printf("Vendas: R$ %d\n", 2000);
+                  break;
+              case 'I':
+                  printf("Vendas: R$ %d\n", 20000);
+                  break;        
+            } // END SWITCH
+    break;
+
+    case 'O':
+        printf("Vendedores: Richard, Luan, Joao e Isadora \n");
+        printf("Informe a primeira letra do vendedor: ");
+        vendendor = toupper(getche());
+        printf("\n");
+
+            switch(vendendor){
+              
+              case 'R':
+                  printf("Vendas: R$ %d\n", 55000);
+                  break;
+              case 'L':
+                  printf("Vendas: R$ %d\n", 1000);
+                  break;
+              case 'J':
+                  printf("Vendas: R$ %d\n", 900);
+                  break;
+              case 'I':
+                  printf("Vendas: R$ %d\n", 22000);
+                  break;        
+            } // END SWITCH
+    break;
+
+    case 'N':
+        printf("Vendedores: Ryan, Luis, Juan e Ines \n");
+        printf("Informe a primeira letra do vendedor: ");
+        vendendor = toupper(getche());
+        printf("\n");
+
+            switch(vendendor){
+              
+              case 'R':
+                  printf("Vendas: R$ %d\n", 5000);
+                  break;
+              case 'L':
+                  printf("Vendas: R$ %d\n", 11000);
+                  break;
+              case 'J':
+                  printf("Vendas: R$ %d\n", 2200);
+                  break;
+              case 'I':
+                  printf("Vendas: R$ %d\n", 400);
+                  break;        
+            } // END SWITCH
+    break;
+   }    // end switch              
+}
